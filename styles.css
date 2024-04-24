@@ -1,3 +1,18 @@
+
+@media (max-width: 720px){
+    .left-sidebar{
+        display: none;
+        width: 0;
+    }
+}
+
+@media (max-width: 720px){
+    .right-sidebar{
+        display: none;
+        width: 0;
+    }
+}
+
 header{
     background-color: blue;
 }
@@ -90,6 +105,7 @@ body {
     .right-sidebar {
     background-color: #f0f0f0;
     padding: 20px;
+    
     }
     
     .online-friends ul {
@@ -161,11 +177,11 @@ body {
         display: flex;
         font-size: 14px;
         margin-bottom: 20px;
-        background-color: rgb(235, 226, 226);
+        background-color: rgb(250, 242, 242);
     
     }
     .event p{
-        font-size: 12px;
+        font-size: 15px;
      
      }
      .event a{
