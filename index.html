@@ -21,134 +21,128 @@
     }
 </style>
 </head>
-<body>
+<body> 
+
+<header class="p-1 mb-1 border-bottom">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <ul>
+          <li><i class="bi bi-facebook text-white" style="font-size:40px;" ></i></li>
+          <li><img src="images.1/notification.png" height="40px"></li>
+          <li><img src="images.1/inbox.png" height="40px"></li>
+          <li><img src="images.1/video.png" height="40px"></li>
+        </ul>
+      </a>
+      <form class="form-inline mx-auto">
+      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <!--<div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle"
+      type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false"> </button> -->
+
+      <div class="nav-user-icon online">
+        <img src="images.1/p-p.jpg">
+      </div>
     
-<header>
-<nav class="navbar navbar-expand-lg ">
-<a class="navbar-brand" href="#">
-
-
-<ul>
-    <li><i class="bi bi-facebook text-white" style="font-size:80px;" ></i></li>
-    <li><img src="images.1/notification.png"></li>
-    <li><img src="images.1/inbox.png"></li>
-    <li><img src="images.1/video.png"></li>
-
-</ul>
-</a>
-<form class="form-inline mx-auto">
-<input class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
-<!--<div class="dropdown">
-<button class="btn btn-secondary dropdown-toggle"
- type="button" id="dropdownMenuButton" data-toggle="dropdown"
-  aria-haspopup="true" aria-expanded="false"> </button> -->
-
-
-    <div class="nav-user-icon online">
-                <img src="images.1/p-p.jpg">
-            </div>
-
-
-
-<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-<a class="dropdown-item" href="#">Settings</a>
-<a class="dropdown-item" href="#">Logout</a>
-</div>
-</div>
-</nav>
-</header>
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-3 left-sidebar">
-    
-<div class="user-profile">
-<img src="user-profile.png">
-<h5>User Name</h5>
-</div> 
-<ul class="list-group">
-     
-    <li list-group-item><a href="#">Friends</a></li>
-    <li list-group-item><a href="#">Groups</a></li>
-    <li list-group-item><a href="#">Marketplace</a></li> 
-    </ul> 
-
-</div> 
-
-
-
-<div class="col-md-6 main-content">
-<div class="post-creation-box">
-<!-- Post creation options -->
-<input type="text" placeholder="Write a post...">
-<button>Post</button>
-</div>
-<div class="post-feed">
-<!-- Posts will be displayed here -->
-<div class="post">
-<img src="user-profile.png" alt="User Profile">
-<h5>User Name</h5>
-<p>Post content</p>
-<button>Like</button>
-<button>Comment</button>
-<button>Share</button>
-</div>
-</div>
-</div>
-<!--events-->
-<div class="right-sidebar">
-    <div class="sidebar-title">
-        <h4>Events</h4>
-        <a href="#">See All</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Settings</a>
+        <a class="dropdown-item" href="#">Logout</a>
+      </div>
     </div>
-   <div class="event">
-    <div class="left-event">
+  </nav>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 left-sidebar">
+      <div class="user-profile">
+        <img src="images.1/profile-pic.jpg">
+        <h5>User Name</h5>
+      </div> 
+      <ul class="list-group">
+        <li list-group-item><a href="#">Friends</a></li>
+        <li list-group-item><a href="#">Groups</a></li>
+        <li list-group-item><a href="#">Marketplace</a></li> 
+      </ul> 
+    </div> 
+
+    <div class="col-md-6 main-content">
+
+      <div class="post-creation-box">
+        <!-- Post creation options -->
+        <input type="text" placeholder="Write a post...">
+        <button>Post</button>
+      </div>
+
+      <div class="post-feed">
+
+        <!-- Posts will be displayed here -->
+        <div class="post">
+          <img src="images.1/profile-pic.png" alt="User Profile">
+          <h5>User Name</h5>
+          <p>Post content</p>
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+        </div>
+
+      </div>
+
+    </div>
+
+<!--events-->
+  <div class="right-sidebar">
+    <div class="sidebar-title">
+      <h4>Events</h4>
+      <a href="#">See All</a>
+    </div>
+    <div class="event">
+      <div class="left-event">
         <h3>24</h3>
         <span>April</span>
-    </div>
-    <div class="right-event">
+      </div>
+      <div class="right-event">
         <h4>Hackerthorn</h4>
         <p><i class="fas fa-map-marker-alt"> </i> EPF Innovation Campus</p>
         <a href="#">More Info</a>
+      </div>
     </div>
-
-   </div>
-   <div class="event">
-    <div class="left-event">
+    <div class="event">
+      <div class="left-event">
         <h3>25</h3>
         <span>April</span>
-    </div>
-    <div class="right-event">
+      </div>
+      <div class="right-event">
         <h4>Marketing</h4>
         <p><i class="fas fa-map-marker-alt"> </i> EPF Innovation Campus</p>
         <a href="#">More Info</a>
+      </div>
     </div>
-    
-
-   </div>
    
     <div class="card float-start">
-        <div class="card-body">
-            <h5 class="card-title">Online Friends</h5>
-            <ul class="list-group flex-column">
-            <li class="list-group-item list-unstyled">
-                <img src="images.1/feed-image-1.png" class="rounded-circle"style="width:30px; height:30px; "> Kea <svg class="online-icon bi bi-circle-fill " width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8"/>
-                  </svg></li>
+      <div class="card-body">
+        <h5 class="card-title">Online Friends</h5>
+        <ul class="list-group flex-column">
+          <li class="list-group-item list-unstyled">
+            <img src="images.1/feed-image-1.png" class="rounded-circle"style="width:30px; height:30px; "> Kea <svg class="online-icon bi bi-circle-fill " width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="8"/>
+                </svg></li>
             <li class="list-group-item list-unstyled"><img src="images.1/feed-image-2.png" class="rounded-circle"style="width:30px; height:30px;"> Shebi <svg class="online-icon bi bi-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="8"/>
-              </svg> </li>
+                  </svg> </li>
             <li class="list-group-item list-unstyled"><img src="images.1/feed-image-3.png" class="rounded-circle"style="width:30px; height:30px; "> Tumi <svg class="online-icon bi bi-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="8"/>
-              </svg></li>
+                  </svg></li>
             <li class="list-group-item list-unstyled"><img src="images.1/feed-image-4.png" class="rounded-circle"style="width:30px; height:30px; "> Linah <svg class="online-icon bi bi-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="8"/>
-              </svg></li>
+                  </svg></li>
             <li class="list-group-item list-unstyled"><img src="images.1/feed-image-5.png" class="rounded-circle"style="width:30px; height:30px; ">
              Fortune <svg class="online-icon bi bi-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="8"/>
-              </svg></li>
-            </ul>
+                  </svg></li>
+        </ul>
             
             
             <hr>
