@@ -9,25 +9,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-  <style>
-    .online-icon {
-      color: green;
-      font-size: 10px;
-
-
-    }
-
-    .navbar-brand ul img {
-
-      size: 20px;
-    }
-
-    .text-decoration-none {
-      color: black;
-      line-height: 4;
-      font-size: large;
-    }
-  </style>
 </head>
 
 <body>
@@ -62,202 +43,117 @@
       </div>
     </nav>
   </header>
-
-  <div class="container-fluid">
+  <!--left Column-->
+  <div class="container-fluid pt-5 mt-3">
     <div class="row">
-      <div class="col-md-3 left-sidebar">
-        <div class="user-profile">
-          <img src="https://th.bing.com/th/id/OIP.GKfzcsUtnGRW-C8wy9nFhgHaHa?w=177&h=180&c=7&r=0&o=5&pid=1.7">
-          <h5>Mamoshebe</h5>
+      <div class="col-md-3 overflow-scroll">
+        <div class="card-sidebar">
+          <div class="profile-shortcut">
+            <img src="https://via.placeholder.com/100">
+           Name
+          </div>
+          <ul class="menu-items">
+            <li class="menu-item">
+              <a href="#">Friends</a><br>
+            </li>
+            <li class="menu-item">
+              <a href="#">Groups</a><br>
+            </li>
+            <li class="menu-item">
+              <a href="#">Marketplace</a>
+            </li>
+            
+            <!-- Add more menu items as needed -->
+          </ul>
         </div>
-
-
-        <button type="button" class="btn btn-primary" placeholder="View Profile" data-bs-toggle="tooltip"
-          title="Profile!" style="align-items:center;">View Profile</button>
-        <hr>
-        <li class="list-unstyled"> <i class="bi bi-newspaper"></i><a href="#" class="text-decoration-none"> Feeds </a>
-        </li>
-        <li class="list-unstyled"><i class="bi bi-people-fill"></i><a href="#" class="text-decoration-none"> Groups </a>
-        </li>
-        <li class="list-unstyled"><i class="bi bi-shop"></i><a href="#" class="text-decoration-none"> MarketPlace </a>
-        </li>
-        <li class="list-unstyled"><i class="bi bi-camera-reels-fill"></i><a href="#" class="text-decoration-none"> Reels
-          </a></li>
-        <li class="list-unstyled"><i class="bi bi-memory"></i><a href="#" class="text-decoration-none"> Memories </a>
-        </li>
-        <li class="list-unstyled"><i class="bi bi-save"></i><a href="#" class="text-decoration-none"> Saved </a></li>
       </div>
-
-      <div class="col-md-6 main-content">
-        <form>
-          <div class="form-group">
-            <textarea class="form-control" placeholder="What's on your mind?"></textarea>
-          </div>
-          <div class="form-group"><br>
-            <label for="postImage">Add Photos/Videos:</label>
-            <input type="file" class="form-control-file" id="postImage">
-          </div>
-          <button type="submit" class="btn btn-primary">Post</button>
-        </form>
-        <hr>
-       
-        <div class="card-body">
-
-          <div class="media mb-3">
-            <h5 class="mt-0"><img src="images.1/profile-pic.jpg" class="rounded-circle"
-                style="width: 55px; height:55px; "> Kesha Watson</h5>
-               
-                
-            <div class="media-body">
-              <p>Just launched my latest project! 🚀👩‍💻 After months of coding and testing, I'm thrilled to share that
-                our team's new mobile app is now live on the App Store! 📱💻 It's been an incredible journey of
-                collaboration, problem-solving, and creativity.<br>
-                Huge shoutout to my amazing team for their hard work and dedication! 💪🎉 #softwaredevelopment
-                #mobileapp #teamwork</p>
-
-              
-              <div class="mt-2">
-                <i class="bi bi-hand-thumbs-up"></i>
-                <i class="bi bi-chat"></i>
-                <i class="bi bi-share"></i>
+        
+          <div class="col-md-6 overflow-scroll" >
+            <div class = "card-main">
+              <div class="post-creation">
+                <textarea class="form-control" rows="3" placeholder="What's on your mind?"></textarea>
+                <div class="mt-2">
+                  <button class="btn btn-primary">Post</button>
+                  <button class="btn btn-secondary">Add Photos/Video</button>
+                </div>
               </div>
+              
+              <!-- Feed of Posts -->
+              <div class="post">
+                <div class="post-header">
+                  <img src="https://via.placeholder.com/100" alt="User Image">
+                  <div>
+                    <h6>User Name</h6>
+                    <p>April 26, 2024</p>
+                  </div>
+                </div>
+                <p>This is a sample post content. It could include text, images, or videos.</p>
+                <div class="post-options">
+                  <button><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                  <button><i class="bi bi-chat"></i> Comment</button>
+                  <button><i class="bi bi-share"></i> Share</button>
+                </div>
+                
+              </div>
+              <!-- Post Creation Box -->
             </div>
           </div>
-          <hr>
-
-          <h5 class="mt-0"><img src="images.1/photo6.png" class="rounded-circle" style="width: 55px; height:55px; ">
-            Jason Le-Roux</h5>
-
-          <p>Just finished reading a fantastic book! 📚 Highly recommend it to all book lovers out there!
-            <br> #reading #booklovers
-          </p>
-
-       
-
-          <div class="mt-2">
-            <i class="bi bi-hand-thumbs-up"></i>
-                <i class="bi bi-chat"></i>
-                <i class="bi bi-share"></i>
+          <!--<div class="row">-->
+          <div class="col-md-3">
+            
+            <div class="card-rightside">
+              <h4>Online Friends</h4>
+              <ul class="online-friends">
+                <li class="online-friend">
+                  <img src="https://via.placeholder.com/50">
+                  John Doe
+                </li>
+                <li class="online-friend">
+                  <img src="https://via.placeholder.com/50">
+                  Jane Smith
+                </li>
+                <li class="online-friend">
+                  <img src="https://via.placeholder.com/50">
+                  Sarah
+                </li>
+                <li class="online-friend">
+                  <img src="https://via.placeholder.com/50">
+                  Ashley
+                </li>
+                <li class="online-friend">
+                  <img src="https://via.placeholder.com/50">
+                  Mary Jane
+                </li>
+                
+                <!-- Add more online friends as needed -->
+              </ul>
+              
+              <div class="birthday-notification">
+                <h5>Birthday Notifications</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake" viewBox="0 0 16 16">
+                  <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802zM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.9.9 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.9.9 0 0 1 4 6.414zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4zM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
+                </svg></i> Today is Kea's birthday</a></li>
+              </div>
+            </div>
             
           </div>
-          <hr>
-          <h5 class="mt-0"> <img src="images.1/feed-image-4.png" class="rounded-circle"
-              style="width: 55px; height:55px;"> Linah </h5>
-
-          <p>Just started my journey into the world of software development!
-            💻🌟 As a complete beginner, I'm excited and a bit nervous, but I'm ready to dive in and learn everything I
-            can. 🚀 Any tips or resources for someone just starting out?
-            I'd love to hear from you all! #softwarebeginner #learningtocode #excited
-          <p>
-
+         
             
-
-          <div class="mt-2">
-            <i class="bi bi-hand-thumbs-up"></i>
-            <i class="bi bi-chat"></i>
-            <i class="bi bi-share"></i>
-          </div>
-        </div>
-
-
-      </div>
-
-      <!--events-->
-      <div class="right-sidebar">
-        <div class="sidebar-title">
-          <h4>Events</h4>
-          <a href="#">See All</a>
-        </div>
-        <div class="event">
-          <div class="left-event">
-            <h3>24</h3>
-            <span>April</span>
-          </div>
-          <div class="right-event">
-            <h4>Hackerthorn</h4>
-            <p><i class="fas fa-map-marker-alt"> </i> EPF Innovation Campus</p>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-        <div class="event">
-          <div class="left-event">
-            <h3>25</h3>
-            <span>April</span>
-          </div>
-          <div class="right-event">
-            <h4>Marketing</h4>
-            <p><i class="fas fa-map-marker-alt"> </i> EPF Innovation Campus</p>
-            <a href="#">More Info</a>
-          </div>
-        </div>
-
-        <div class="card float-start">
-          <div class="card-body">
-            <h5 class="card-title">Online Friends</h5>
-            <ul class="list-group flex-column">
-              <li class="list-group-item list-unstyled">
-                <img src="images.1/feed-image-1.png" class="rounded-circle" style="width:30px; height:30px; "> Kea <svg
-                  class="online-icon bi bi-circle-fill " width="1em" height="1em" viewBox="0 0 16 16"
-                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" />
-                </svg>
-              </li>
-              <li class="list-group-item list-unstyled"><img src="images.1/feed-image-2.png" class="rounded-circle"
-                  style="width:30px; height:30px;"> Shebi <svg class="online-icon bi bi-circle-fill" width="1em"
-                  height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" />
-                </svg> </li>
-              <li class="list-group-item list-unstyled"><img src="images.1/feed-image-3.png" class="rounded-circle"
-                  style="width:30px; height:30px; "> Tumi <svg class="online-icon bi bi-circle-fill" width="1em"
-                  height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" />
-                </svg></li>
-              <li class="list-group-item list-unstyled"><img src="images.1/feed-image-4.png" class="rounded-circle"
-                  style="width:30px; height:30px; "> Linah <svg class="online-icon bi bi-circle-fill" width="1em"
-                  height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" />
-                </svg></li>
-              <li class="list-group-item list-unstyled"><img src="images.1/feed-image-5.png" class="rounded-circle"
-                  style="width:30px; height:30px; ">
-                Fortune <svg class="online-icon bi bi-circle-fill" width="1em" height="1em" viewBox="0 0 16 16"
-                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" />
-                </svg></li>
-            </ul>
-
-
-            <hr>
-
-            <h5>Birthday Notifications</h5>
-            <li class="list-unstyled"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cake" viewBox="0 0 16 16">
-              <path d="m7.994.013-.595.79a.747.747 0 0 0 .101 1.01V4H5a2 2 0 0 0-2 2v3H2a2 2 0 0 0-2 2v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a2 2 0 0 0-2-2h-1V6a2 2 0 0 0-2-2H8.5V1.806A.747.747 0 0 0 8.592.802zM4 6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v.414a.9.9 0 0 1-.646-.268 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0A.9.9 0 0 1 4 6.414zm0 1.414c.49 0 .98-.187 1.354-.56a.914.914 0 0 1 1.292 0c.748.747 1.96.747 2.708 0a.914.914 0 0 1 1.292 0c.374.373.864.56 1.354.56V9H4zM1 11a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.793l-.354.354a.914.914 0 0 1-1.293 0 1.914 1.914 0 0 0-2.707 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0 1.914 1.914 0 0 0-2.708 0 .914.914 0 0 1-1.292 0L1 11.793zm11.646 1.854a1.915 1.915 0 0 0 2.354.279V15H1v-1.867c.737.452 1.715.36 2.354-.28a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.708 0a.914.914 0 0 1 1.292 0c.748.748 1.96.748 2.707 0a.914.914 0 0 1 1.293 0Z"/>
-            </svg></i> Today is Kea's birthday</a></li>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-  </div>
-  </div>
-  </div>
-
+           
   
-  <footer class="footer">
-    <div class="container">
-      <p>Copyright © 2024 Facebook. All rights reserved.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">About</a></li>
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-      </ul>
-    </div>
-  </footer>
+          <footer class="footer">
+            <div class="container">
+              <p>Copyright © 2024 Facebook. All rights reserved.</p>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+              </ul>
+            </div>
+          </footer>
 
 </body>
+  
+
 
 </html>
