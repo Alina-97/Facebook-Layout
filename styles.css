@@ -337,9 +337,18 @@ body {
     background-color: #e9ecef;
     border-radius: 5px;
   }
+  .list-unstyled{
+    font-size: 20px;
+    font-weight: bold;
+  }
   footer {
     background-color:blue;
     padding: 10px;
     text-align: center;
     color:black;
+    }
+    .profile-shortcut,h2{
+        text-align: center;
+
+
     }
